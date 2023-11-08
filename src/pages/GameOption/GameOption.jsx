@@ -12,7 +12,6 @@ export default function GameOption({
   changeBotDiff,
   playerFigure,
 }) {
-  console.log(1);
   return (
     <StyledMainDiv>
       <StyledLinkPlayAgain
