@@ -20,9 +20,11 @@ export default function WinnerModal({ winner }) {
     <div style={myComponentStyle}>
       {winner === 'noWinner' ? <StyledTitle>No winner!</StyledTitle> : null}
       {winner === 'Player' ? (
-        <StyledTitle>Congrats, you won!</StyledTitle>
+        <StyledTitle>Congrats, you have won!</StyledTitle>
       ) : null}
-      {winner === 'Bot' ? <StyledTitle>Bot won. Try again!</StyledTitle> : null}
+      {winner === 'Bot' ? (
+        <StyledTitle>Bot has won. Try again!</StyledTitle>
+      ) : null}
       {playAgainButton}
     </div>
   );
