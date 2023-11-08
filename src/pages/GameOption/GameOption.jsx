@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { StyledMainDiv } from './GameOption.styled';
 import FigureSelect from 'components/FigureSelect';
 import BotDiffSelect from 'components/BotDiffSelect';

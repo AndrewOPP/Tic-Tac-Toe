@@ -1,4 +1,3 @@
-import { StyledLink } from 'pages/MainMenu/MainMenu.styled';
 import styled from 'styled-components';
 
 export const StyledMainDiv = styled.div`
