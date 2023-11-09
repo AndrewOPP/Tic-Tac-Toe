@@ -17,7 +17,7 @@ export default function MainMenu() {
   const [botDiff, setbotDiff] = useState('Easy');
 
   useEffect(() => {
-    const linksVisibleIs = localStorage.getItem('linksVisible');
+    const linksVisibleIs = sessionStorage.getItem('linksVisible');
     if (linksVisibleIs !== null) setLinksVisible(JSON.parse(linksVisibleIs));
   }, []);
 
@@ -37,7 +37,7 @@ export default function MainMenu() {
   };
 
   const handlerClick = () => {
-    localStorage.setItem('linksVisible', JSON.stringify(!linksVisible));
+    sessionStorage.setItem('linksVisible', JSON.stringify(!linksVisible));
     setLinksVisible(!linksVisible);
   };
 
